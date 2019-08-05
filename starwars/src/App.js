@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import {StarwarsCharCard} from "./components/StarwarsCharCard";
-
+import StarWarsCharPic1 from "./images/Luke Skywalker.jpeg";
+import StarWarsCharPic2 from "./images/c3po.png";
+import StarWarsCharPic3 from "./images/r2d2.jpg";
 
 const App = () => {
   const [starwarsChars, setStarwarsChars] = useState(null);
@@ -22,10 +24,17 @@ const App = () => {
     return (
       <div className="App">
         <h1 className="Header">I LOVE Star Wars Characters</h1>
+        
+        <div className="Pictures">
+         <img src={StarWarsCharPic1}/>
+         <img src={StarWarsCharPic2}/>
+         <img src={StarWarsCharPic3}/>
+         </div>
        {starwarsChars.map(charData => {
          return (
            <StarwarsCharCard charData={charData} key={charData.name}/>
-         )
+           )
+         
        })}
 
       </div>
