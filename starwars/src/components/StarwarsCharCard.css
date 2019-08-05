@@ -1,0 +1,11 @@
+.main-bio h2 {
+    padding: 20px 20px;
+    color: blue;
+    font-size: 35px;
+}
+
+.main-bio h3 {
+    padding: 20px 20px; 
+    color: red;
+    font-size: 20px;
+}
